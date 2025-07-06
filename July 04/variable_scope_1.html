@@ -1,0 +1,20 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(`Global: a:${a} b:${b} c:${c}`);
+    function f1()
+    {
+        console.log(`F1 starts....`);
+        console.log(`f1: a:${a} b:${b} c:${c}`);
+        console.log(`F1 ends...`);
+    }
+    function f2()
+    {
+        console.log(`F2 starts....`);
+        console.log(`f2: a:${a} b:${b} c:${c}`);
+        console.log(`F2 ends...`);
+    }
+    f1();
+    f2();
+</script>
