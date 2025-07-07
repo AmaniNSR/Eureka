@@ -1,0 +1,23 @@
+<script>
+ let input = '12345678987';
+let output= input.replace(input.slice(2,-2),'*'.repeat(input.length-4));
+    
+    console.log("account Number:", output);
+</script>
+
+<script>
+let num='12345678987';
+    let account_number = num.substring(0, 2) + num.substring(2, 9).replaceAll(/./g, '*') + num.substring(9);
+    console.log('Account_number: ',account_number);
+    </script>
+
+    <script>
+        let s = '12345678987';
+        let str = s.slice(2,9);
+        for(let char of str)
+    {
+        s=s.replace(char,'*');
+    
+    }
+    console.log(s);
+    </script>

@@ -1,0 +1,13 @@
+<script>
+    let s = '1111222233334444';
+  let str = '';
+  for(i=0;i<s.length;i+=4)
+  {
+    str+=s.substr(i,4);
+if(i+4<s.length)
+{
+    str +=`-`;
+}
+  }
+  console.log(str);
+</script>

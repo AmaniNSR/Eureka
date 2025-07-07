@@ -1,0 +1,7 @@
+<script>
+     let input = 'hello@#hi&';
+     let string = input.match(/[a-zA-Z0-9]/g).join('');
+     let addspecialchar = input.match(/[^a-zA-Z0-9]/g).join('');
+     let output = string + addspecialchar;
+     console.log(output);
+     </script>

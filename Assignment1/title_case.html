@@ -1,0 +1,20 @@
+<script>
+ let str = 'this is javascript class';
+
+// Split into words, capitalize first letter of each word, then join back
+let titleCaseStr = str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+console.log("Original String:", str);
+console.log("Title Case String:", titleCaseStr);
+</script>
+
+
+<script>
+    let input='this is javascript class';
+    let output='';
+    let words=input.split(' ');
+    for(var i=0;i<words.length;i++){
+        output+=words[i].charAt(0).toUpperCase()+words[i].substring(1)+" ";
+    }
+    console.log(output);
+</script>
