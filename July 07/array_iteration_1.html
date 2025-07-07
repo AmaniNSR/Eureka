@@ -1,0 +1,22 @@
+<script>
+    let cars = ['Tata', 'Honda', 'Maruti', 'Hyundai'];
+    //1.loop
+    for(i =0;i<cars.length;i++)
+{
+    console.log(i, cars[i]);
+}
+console.log('===========')
+//2.for in (ES_6 2015)
+for(i in cars){
+    console.log(i, cars[i]);
+}
+//2.for of (ES_6 2015)
+for(val of cars){
+    console.log(val);
+}
+//4.for Each
+cars.forEach(function printEachElement(val, ind){
+console.log(val,ind)});
+
+cars.forEach(val => console.log(val));
+</script>

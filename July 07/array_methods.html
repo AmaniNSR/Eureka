@@ -1,0 +1,19 @@
+<script>
+     let cars = ['Tata', 'Honda', 'Maruti'];
+     cars.push('Hyundai');
+     console.log('after push',cars);
+     cars.pop();
+     console.log('after pop',cars);
+     cars.unshift('Hyundai');
+     console.log('after unshift',cars);
+     cars.shift();
+     console.log('after shift',cars);
+
+     //splice
+     cars.splice(1,2,'Toyota','Mahindra');
+     console.log('after splice-1',cars);
+     cars.splice(1,2);
+     console.log('after splice-2',cars);
+     cars.splice(1, 0, 'Honda', 'Maruti');
+     console.log('after splice-2',cars);
+</script>
