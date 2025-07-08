@@ -1,0 +1,16 @@
+<script>
+    let input = 'entertainment';
+    let output = {};
+    for(let ch of input)
+{
+    if(output[ch])
+{
+    output[ch] += 1;
+}
+else
+{
+   output[ch] = 1;
+}
+}
+console.log(output);
+</script>

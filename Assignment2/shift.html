@@ -1,0 +1,17 @@
+<script>
+    let input = 'abcxyz';
+    let output = '';
+    for(let i=0;i<input.length;i++)
+{
+    let ch = input[i];
+    if(ch=='z')
+    {
+        output += 'a';
+    }
+    else
+    {
+        output += String.fromCharCode(ch.charCodeAt(0) + 1);
+    }
+}
+console.log(output);
+</script>

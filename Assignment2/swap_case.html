@@ -1,0 +1,19 @@
+<script>
+    let input = 'Hello World';
+    let output = '';
+    for(let ch of input)
+{
+    if(ch>='a' && ch<= 'z'){
+    output += ch.toUpperCase();
+    }
+    else if(ch>='A' && ch<='Z')
+    {
+        output += ch.toLowerCase();
+    }
+    else{
+        output += ch;
+    }
+}
+console.log(output);
+
+</script>

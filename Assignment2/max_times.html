@@ -1,0 +1,24 @@
+<script>
+    let input = 'hello world';
+    let output = {};
+    let maxch = '';
+    let maxcount = 0;
+    for(let ch of input)
+{
+    if(output[ch])
+{
+    output[ch] += 1;
+}
+else
+{
+   output[ch] = 1;
+}
+if(output[ch]>maxcount)
+{
+  maxcount = output[ch];
+  maxch = ch;
+}
+
+}
+console.log('max times ch:', maxch.toUpperCase());
+</script>

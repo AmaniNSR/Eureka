@@ -1,0 +1,25 @@
+<script>
+    let input= prompt('Enter a string:');
+    let arr=[]
+    let fl=false;
+    for(i in input){
+        ch=input.charAt(i)
+        if('{(['.includes(ch)){
+            arr.push(ch);
+        }
+        else{
+            if ((arr[arr.length-1]=='(' && ch==')') || (arr[arr.length-1]=='[' && ch==']') || (arr[arr.length-1]=='{' && ch=='}')){
+                arr.pop();
+            }
+            else{
+                fl=false;
+                break;
+            }
+        }
+    }
+    if(arr==[]){
+        fl=true;
+    }
+    console.log(fl);
+
+</script>
